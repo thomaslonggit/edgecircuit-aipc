@@ -1,0 +1,205 @@
+:root {
+  font-family: Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+}
+
+/* RTL架构图 节点样式 */
+.bug-node {
+  animation: pulse 2s infinite;
+}
+
+/* 错误节点闪烁动画 */
+@keyframes pulse {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+/* RTL架构图容器样式 */
+.circuit-container {
+  position: relative;
+  overflow: hidden;
+  background-color: #F8F9F9;
+  background-image: radial-gradient(#E5E8E8 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* RTL节点悬停效果 */
+.cytoscape-container .node {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cytoscape-container:hover .node:not(:hover) {
+  opacity: 0.7;
+}
+
+/* 数据总线样式 */
+.bus-edge {
+  stroke-width: 3px;
+  stroke-dasharray: 5, 5;
+}
+
+/* 不同类型节点的样式 */
+.input-node {
+  background-color: #B3D9FF !important;
+  border: 2px solid rgba(0, 60, 120, 0.5);
+}
+
+.output-node {
+  background-color: #FFD2B3 !important;
+  border: 2px solid rgba(120, 60, 0, 0.5);
+}
+
+.register-node {
+  background-color: #E6CCFF !important;
+  border: 2px solid rgba(60, 0, 120, 0.5);
+}
+
+.module-node {
+  background-color: #E5E8E8 !important;
+  border: 2px solid rgba(60, 60, 60, 0.5);
+}
+
+.combinational-node {
+  background-color: #D9FFD2 !important;
+  border: 2px solid rgba(0, 120, 60, 0.5);
+}
+
+.control-node {
+  background-color: #FFE5CC !important;
+  border: 2px solid rgba(120, 90, 0, 0.5);
+}
+
+/* 节点标签样式 */
+.node-label {
+  font-family: 'Consolas', monospace;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* 信号标签样式 */
+.signal-label {
+  font-family: 'Consolas', monospace;
+  font-size: 10px;
+  fill: #555;
+}
+
+/* 总线宽度标签 */
+.bus-width {
+  font-family: 'Consolas', monospace;
+  font-size: 9px;
+  font-style: italic;
+  fill: #2471A3;
+}
+
+/* 编辑器错误样式 */
+.monaco-editor .error-widget {
+  border-left: 4px solid #C0392B;
+  background-color: rgba(231, 76, 60, 0.1);
+}
+
+.monaco-editor .warning-widget {
+  border-left: 4px solid #F39C12;
+  background-color: rgba(243, 156, 18, 0.1);
+}
+
+/* 错误图标动画 */
+@keyframes attention {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.monaco-editor .errorGlyphMargin, 
+.monaco-editor .warningGlyphMargin {
+  animation: attention 2s infinite;
+}
+
+/* RTL架构图工具提示 */
+.cytoscape-tooltip {
+  position: absolute;
+  background-color: #34495E;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: 'Consolas', monospace;
+  pointer-events: none;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  max-width: 250px;
+}
+
+/* 高亮错误路径 */
+.error-path {
+  stroke: #C0392B !important;
+  stroke-width: 4px !important;
+  animation: error-pulse 2s infinite;
+}
+
+@keyframes error-pulse {
+  0% {
+    stroke-opacity: 0.6;
+  }
+  50% {
+    stroke-opacity: 1;
+  }
+  100% {
+    stroke-opacity: 0.6;
+  }
+}
+
+/* 加载动画 */
+.loader {
+  border: 5px solid rgba(0, 113, 197, 0.1);
+  border-radius: 50%;
+  border-top: 5px solid #0071c5;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+.loader-small {
+  border: 3px solid rgba(0, 113, 197, 0.1);
+  border-radius: 50%;
+  border-top: 3px solid #0071c5;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} 
