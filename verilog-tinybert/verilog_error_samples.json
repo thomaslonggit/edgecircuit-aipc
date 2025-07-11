@@ -1,0 +1,623 @@
+[
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少左中括号，第2行，第34列",
+    "line": 2,
+    "column": 34
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_propery PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "set_property拼写错误，第5行，第1列",
+    "line": 5,
+    "column": 1
+  },
+  {
+    "filename": "counter.v",
+    "original_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_code": "module counter (\n  input clk,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_type": "缺少endmodule",
+    "error_description": "删除最后一个endmodule，第3行，第1列",
+    "line": 3,
+    "column": 1
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少左中括号，第12行，第34列",
+    "line": 12,
+    "column": 34
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少左中括号，第7行，第29列",
+    "line": 7,
+    "column": 29
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少右中括号，第4行，第49列",
+    "line": 4,
+    "column": 49
+  },
+  {
+    "filename": "counter.v",
+    "original_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_type": "缺少endmodule",
+    "error_description": "删除最后一个endmodule，第6行，第1列",
+    "line": 6,
+    "column": 1
+  },
+  {
+    "filename": "counter.v",
+    "original_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_type": "缺少endmodule",
+    "error_description": "删除最后一个endmodule，第7行，第1列",
+    "line": 7,
+    "column": 1
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少右中括号，第2行，第48列",
+    "line": 2,
+    "column": 48
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少左中括号，第4行，第34列",
+    "line": 4,
+    "column": 34
+  },
+  {
+    "filename": "counter.v",
+    "original_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if !rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_type": "括号不匹配",
+    "error_description": "删除一对括号，第7行，第8列",
+    "line": 7,
+    "column": 8
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少左中括号，第5行，第29列",
+    "line": 5,
+    "column": 29
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_propery PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "set_property拼写错误，第11行，第1列",
+    "line": 11,
+    "column": 1
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_propery IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "set_property拼写错误，第12行，第1列",
+    "line": 12,
+    "column": 1
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少左中括号，第6行，第34列",
+    "line": 6,
+    "column": 34
+  },
+  {
+    "filename": "tb_counter.v",
+    "original_code": "module tb_counter;\n  reg clk;\n  reg rstn;\n  wire [3:0] out;\n\n  counter c0 (\n    .clk(clk),\n    .rstn(rstn),\n    .out(out)\n  );\n\n  always #5 clk = ~clk;\n\n  initial begin\n    clk <= 0;\n    rstn <= 0;\n    #20 rstn <= 1;\n    #80 rstn <= 0;\n    #50 rstn <= 1;\n    #20 $finish;\n  end\nendmodule\n",
+    "error_code": "module tb_counter;\n  reg clk;\n  reg rstn;\n  wire [3:0] out;\n\n  counter c0 (\n    .clk(clk),\n    .rstn(rstn),\n    .out(out)\n\n  always #5 clk = ~clk;\n\n  initial begin\n    clk <= 0;\n    rstn <= 0;\n    #20 rstn <= 1;\n    #80 rstn <= 0;\n    #50 rstn <= 1;\n    #20 $finish;\n  end\nendmodule\n",
+    "error_type": "缺少endmodule",
+    "error_description": "删除最后一个endmodule，第10行，第1列",
+    "line": 10,
+    "column": 1
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少右中括号，第10行，第51列",
+    "line": 10,
+    "column": 51
+  },
+  {
+    "filename": "counter.v",
+    "original_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_code": "  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_type": "缺少endmodule",
+    "error_description": "删除最后一个endmodule，第1行，第1列",
+    "line": 1,
+    "column": 1
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少左中括号，第7行，第29列",
+    "line": 7,
+    "column": 29
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少左中括号，第5行，第29列",
+    "line": 5,
+    "column": 29
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少左中括号，第12行，第34列",
+    "line": 12,
+    "column": 34
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少左中括号，第6行，第34列",
+    "line": 6,
+    "column": 34
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少左中括号，第3行，第29列",
+    "line": 3,
+    "column": 29
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_propery PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "set_property拼写错误，第5行，第1列",
+    "line": 5,
+    "column": 1
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少左中括号，第9行，第29列",
+    "line": 9,
+    "column": 29
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少右中括号，第6行，第51列",
+    "line": 6,
+    "column": 51
+  },
+  {
+    "filename": "counter.v",
+    "original_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n  end\nendmodule\n",
+    "error_type": "缺少endmodule",
+    "error_description": "删除最后一个endmodule，第10行，第1列",
+    "line": 10,
+    "column": 1
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少右中括号，第10行，第51列",
+    "line": 10,
+    "column": 51
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少右中括号，第5行，第46列",
+    "line": 5,
+    "column": 46
+  },
+  {
+    "filename": "counter.v",
+    "original_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_code": "module counter (\n  input clk,\n  input rstn,\n  otput reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_type": "端口名错误",
+    "error_description": "将out拼写为ot，第4行，第3列",
+    "line": 4,
+    "column": 3
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_propery PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "set_property拼写错误，第9行，第1列",
+    "line": 9,
+    "column": 1
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少左中括号，第4行，第34列",
+    "line": 4,
+    "column": 34
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少右中括号，第3行，第44列",
+    "line": 3,
+    "column": 44
+  },
+  {
+    "filename": "counter.v",
+    "original_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_code": "module counter (\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_type": "缺少endmodule",
+    "error_description": "删除最后一个endmodule，第2行，第1列",
+    "line": 2,
+    "column": 1
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少左中括号，第1行，第29列",
+    "line": 1,
+    "column": 29
+  },
+  {
+    "filename": "counter.v",
+    "original_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_code": "module counter (\n  input clk,\n  input rstn,\n  otput reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_type": "端口名错误",
+    "error_description": "将out拼写为ot，第4行，第3列",
+    "line": 4,
+    "column": 3
+  },
+  {
+    "filename": "counter.v",
+    "original_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_type": "缺少endmodule",
+    "error_description": "删除最后一个endmodule，第8行，第1列",
+    "line": 8,
+    "column": 1
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少左中括号，第6行，第34列",
+    "line": 6,
+    "column": 34
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_propery PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "set_property拼写错误，第9行，第1列",
+    "line": 9,
+    "column": 1
+  },
+  {
+    "filename": "counter.v",
+    "original_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_type": "缺少endmodule",
+    "error_description": "删除最后一个endmodule，第9行，第1列",
+    "line": 9,
+    "column": 1
+  },
+  {
+    "filename": "counter.v",
+    "original_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_code": "module counter (\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_type": "缺少endmodule",
+    "error_description": "删除最后一个endmodule，第2行，第1列",
+    "line": 2,
+    "column": 1
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少右中括号，第4行，第49列",
+    "line": 4,
+    "column": 49
+  },
+  {
+    "filename": "counter.v",
+    "original_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      ot <= out + 1;\n  end\nendmodule\n",
+    "error_type": "端口名错误",
+    "error_description": "将out拼写为ot，第10行，第7列",
+    "line": 10,
+    "column": 7
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少左中括号，第10行，第34列",
+    "line": 10,
+    "column": 34
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少右中括号，第2行，第48列",
+    "line": 2,
+    "column": 48
+  },
+  {
+    "filename": "tb_counter.v",
+    "original_code": "module tb_counter;\n  reg clk;\n  reg rstn;\n  wire [3:0] out;\n\n  counter c0 (\n    .clk(clk),\n    .rstn(rstn),\n    .out(out)\n  );\n\n  always #5 clk = ~clk;\n\n  initial begin\n    clk <= 0;\n    rstn <= 0;\n    #20 rstn <= 1;\n    #80 rstn <= 0;\n    #50 rstn <= 1;\n    #20 $finish;\n  end\nendmodule\n",
+    "error_code": "module tb_counter;\n  reg clk;\n  reg rstn;\n  wire [3:0] out;\n\n  counter c0 (\n    .clk(clk),\n    .rstn(rstn),\n    .out(out)\n  );\n\n  always #5 clk = ~clk;\n\n    clk <= 0;\n    rstn <= 0;\n    #20 rstn <= 1;\n    #80 rstn <= 0;\n    #50 rstn <= 1;\n    #20 $finish;\n  end\nendmodule\n",
+    "error_type": "缺少endmodule",
+    "error_description": "删除最后一个endmodule，第14行，第1列",
+    "line": 14,
+    "column": 1
+  },
+  {
+    "filename": "counter.v",
+    "original_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_type": "缺少endmodule",
+    "error_description": "删除最后一个endmodule，第8行，第1列",
+    "line": 8,
+    "column": 1
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_propery PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "set_property拼写错误，第5行，第1列",
+    "line": 5,
+    "column": 1
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少左中括号，第11行，第29列",
+    "line": 11,
+    "column": 29
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_propery IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "set_property拼写错误，第2行，第1列",
+    "line": 2,
+    "column": 1
+  },
+  {
+    "filename": "tb_counter.v",
+    "original_code": "module tb_counter;\n  reg clk;\n  reg rstn;\n  wire [3:0] out;\n\n  counter c0 (\n    .clk(clk),\n    .rstn(rstn),\n    .out(out)\n  );\n\n  always #5 clk = ~clk;\n\n  initial begin\n    clk <= 0;\n    rstn <= 0;\n    #20 rstn <= 1;\n    #80 rstn <= 0;\n    #50 rstn <= 1;\n    #20 $finish;\n  end\nendmodule\n",
+    "error_code": "module tb_counter;\n  reg clk;\n  reg rstn;\n\n  counter c0 (\n    .clk(clk),\n    .rstn(rstn),\n    .out(out)\n  );\n\n  always #5 clk = ~clk;\n\n  initial begin\n    clk <= 0;\n    rstn <= 0;\n    #20 rstn <= 1;\n    #80 rstn <= 0;\n    #50 rstn <= 1;\n    #20 $finish;\n  end\nendmodule\n",
+    "error_type": "缺少endmodule",
+    "error_description": "删除最后一个endmodule，第4行，第1列",
+    "line": 4,
+    "column": 1
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_propery PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "set_property拼写错误，第9行，第1列",
+    "line": 9,
+    "column": 1
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_propery IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "set_property拼写错误，第6行，第1列",
+    "line": 6,
+    "column": 1
+  },
+  {
+    "filename": "tb_counter.v",
+    "original_code": "module tb_counter;\n  reg clk;\n  reg rstn;\n  wire [3:0] out;\n\n  counter c0 (\n    .clk(clk),\n    .rstn(rstn),\n    .out(out)\n  );\n\n  always #5 clk = ~clk;\n\n  initial begin\n    clk <= 0;\n    rstn <= 0;\n    #20 rstn <= 1;\n    #80 rstn <= 0;\n    #50 rstn <= 1;\n    #20 $finish;\n  end\nendmodule\n",
+    "error_code": "module tb_counter;\n  reg clk\n  reg rstn;\n  wire [3:0] out;\n\n  counter c0 (\n    .clk(clk),\n    .rstn(rstn),\n    .out(out)\n  );\n\n  always #5 clk = ~clk;\n\n  initial begin\n    clk <= 0;\n    rstn <= 0;\n    #20 rstn <= 1;\n    #80 rstn <= 0;\n    #50 rstn <= 1;\n    #20 $finish;\n  end\nendmodule\n",
+    "error_type": "缺少分号",
+    "error_description": "在某行末尾删除分号，第2行，第10列",
+    "line": 2,
+    "column": 10
+  },
+  {
+    "filename": "tb_counter.v",
+    "original_code": "module tb_counter;\n  reg clk;\n  reg rstn;\n  wire [3:0] out;\n\n  counter c0 (\n    .clk(clk),\n    .rstn(rstn),\n    .out(out)\n  );\n\n  always #5 clk = ~clk;\n\n  initial begin\n    clk <= 0;\n    rstn <= 0;\n    #20 rstn <= 1;\n    #80 rstn <= 0;\n    #50 rstn <= 1;\n    #20 $finish;\n  end\nendmodule\n",
+    "error_code": "module tb_counter;\n  reg clk;\n  reg rstn;\n  wire [3:0] out;\n\n  counter c0 \n    .clk(clk),\n    .rstn(rstn),\n    .out(out)\n  );\n\n  always #5 clk = ~clk;\n\n  initial begin\n    clk <= 0;\n    rstn <= 0;\n    #20 rstn <= 1;\n    #80 rstn <= 0;\n    #50 rstn <= 1;\n    #20 $finish;\n  end\nendmodule\n",
+    "error_type": "括号不匹配",
+    "error_description": "删除一对括号，第6行，第14列",
+    "line": 6,
+    "column": 14
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少右中括号，第12行，第51列",
+    "line": 12,
+    "column": 51
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少左中括号，第1行，第29列",
+    "line": 1,
+    "column": 29
+  },
+  {
+    "filename": "counter.v",
+    "original_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodul\n",
+    "error_type": "拼写错误",
+    "error_description": "将module拼写为modul，第12行，第4列",
+    "line": 12,
+    "column": 4
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clkk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "端口名错误",
+    "error_description": "端口名拼写错误，第1行，第40列",
+    "line": 1,
+    "column": 40
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_propery PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "set_property拼写错误，第9行，第1列",
+    "line": 9,
+    "column": 1
+  },
+  {
+    "filename": "tb_counter.v",
+    "original_code": "module tb_counter;\n  reg clk;\n  reg rstn;\n  wire [3:0] out;\n\n  counter c0 (\n    .clk(clk),\n    .rstn(rstn),\n    .out(out)\n  );\n\n  always #5 clk = ~clk;\n\n  initial begin\n    clk <= 0;\n    rstn <= 0;\n    #20 rstn <= 1;\n    #80 rstn <= 0;\n    #50 rstn <= 1;\n    #20 $finish;\n  end\nendmodule\n",
+    "error_code": "module tb_counter;\n  reg clk;\n  reg rstn;\n  wire [3:0] out;\n\n  counter c0 (\n    .clk(clk),\n    .rstn(rstn),\n    .out(out)\n  );\n\n  always #5 clk = ~clk;\n\n  initial begin\n    clk <= 0\n    rstn <= 0;\n    #20 rstn <= 1;\n    #80 rstn <= 0;\n    #50 rstn <= 1;\n    #20 $finish;\n  end\nendmodule\n",
+    "error_type": "缺少分号",
+    "error_description": "在某行末尾删除分号，第15行，第13列",
+    "line": 15,
+    "column": 13
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clkk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "端口名错误",
+    "error_description": "端口名拼写错误，第2行，第45列",
+    "line": 2,
+    "column": 45
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_propery PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "set_property拼写错误，第7行，第1列",
+    "line": 7,
+    "column": 1
+  },
+  {
+    "filename": "tb_counter.v",
+    "original_code": "module tb_counter;\n  reg clk;\n  reg rstn;\n  wire [3:0] out;\n\n  counter c0 (\n    .clk(clk),\n    .rstn(rstn),\n    .out(out)\n  );\n\n  always #5 clk = ~clk;\n\n  initial begin\n    clk <= 0;\n    rstn <= 0;\n    #20 rstn <= 1;\n    #80 rstn <= 0;\n    #50 rstn <= 1;\n    #20 $finish;\n  end\nendmodule\n",
+    "error_code": "modul tb_counter;\n  reg clk;\n  reg rstn;\n  wire [3:0] out;\n\n  counter c0 (\n    .clk(clk),\n    .rstn(rstn),\n    .out(out)\n  );\n\n  always #5 clk = ~clk;\n\n  initial begin\n    clk <= 0;\n    rstn <= 0;\n    #20 rstn <= 1;\n    #80 rstn <= 0;\n    #50 rstn <= 1;\n    #20 $finish;\n  end\nendmodule\n",
+    "error_type": "拼写错误",
+    "error_description": "将module拼写为modul，第1行，第1列",
+    "line": 1,
+    "column": 1
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "缺少右中括号，第6行，第51列",
+    "line": 6,
+    "column": 51
+  },
+  {
+    "filename": "counter.xdc",
+    "original_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_code": "set_property PACKAGE_PIN W5 [get_ports clk]\nset_property IOSTANDARD LVCMOS33 [get_ports clk]\nset_property PACKAGE_PIN V6 [get_ports rstn]\nset_property IOSTANDARD LVCMOS33 [get_ports rstn]\nset_property PACKAGE_PIN U7 [get_ports {out[0]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[0]}]\nset_property PACKAGE_PIN U8 [get_ports {out[1]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[1]}]\nset_property PACKAGE_PIN V7 [get_ports {out[2]}]\nset_property IOSTANDARD LVCMOS33 [get_ports {out[2]}]\nset_property PACKAGE_PIN W6 [get_ports {out[3]}]\nset_propery IOSTANDARD LVCMOS33 [get_ports {out[3]}]\n",
+    "error_type": "xdc格式错误",
+    "error_description": "set_property拼写错误，第12行，第1列",
+    "line": 12,
+    "column": 1
+  },
+  {
+    "filename": "tb_counter.v",
+    "original_code": "module tb_counter;\n  reg clk;\n  reg rstn;\n  wire [3:0] out;\n\n  counter c0 (\n    .clk(clk),\n    .rstn(rstn),\n    .out(out)\n  );\n\n  always #5 clk = ~clk;\n\n  initial begin\n    clk <= 0;\n    rstn <= 0;\n    #20 rstn <= 1;\n    #80 rstn <= 0;\n    #50 rstn <= 1;\n    #20 $finish;\n  end\nendmodule\n",
+    "error_code": "module tb_counter;\n  reg clk;\n  reg rstn;\n  wire [3:0] out;\n\n  counter c0 (\n    .rstn(rstn),\n    .out(out)\n  );\n\n  always #5 clk = ~clk;\n\n  initial begin\n    clk <= 0;\n    rstn <= 0;\n    #20 rstn <= 1;\n    #80 rstn <= 0;\n    #50 rstn <= 1;\n    #20 $finish;\n  end\nendmodule\n",
+    "error_type": "缺少endmodule",
+    "error_description": "删除最后一个endmodule，第7行，第1列",
+    "line": 7,
+    "column": 1
+  },
+  {
+    "filename": "tb_counter.v",
+    "original_code": "module tb_counter;\n  reg clk;\n  reg rstn;\n  wire [3:0] out;\n\n  counter c0 (\n    .clk(clk),\n    .rstn(rstn),\n    .out(out)\n  );\n\n  always #5 clk = ~clk;\n\n  initial begin\n    clk <= 0;\n    rstn <= 0;\n    #20 rstn <= 1;\n    #80 rstn <= 0;\n    #50 rstn <= 1;\n    #20 $finish;\n  end\nendmodule\n",
+    "error_code": "module tb_counter;\n  wire clk;\n  reg rstn;\n  wire [3:0] out;\n\n  counter c0 (\n    .clk(clk),\n    .rstn(rstn),\n    .out(out)\n  );\n\n  always #5 clk = ~clk;\n\n  initial begin\n    clk <= 0;\n    rstn <= 0;\n    #20 rstn <= 1;\n    #80 rstn <= 0;\n    #50 rstn <= 1;\n    #20 $finish;\n  end\nendmodule\n",
+    "error_type": "信号类型错误",
+    "error_description": "将reg改为wire，第2行，第3列",
+    "line": 2,
+    "column": 3
+  },
+  {
+    "filename": "counter.v",
+    "original_code": "module counter (\n  input clk,\n  input rstn,\n  output reg [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_code": "module counter (\n  input clk,\n  input rstn,\n  output wire [3:0] out\n);\n  always @ (posedge clk) begin\n    if (!rstn)\n      out <= 0;\n    else\n      out <= out + 1;\n  end\nendmodule\n",
+    "error_type": "信号类型错误",
+    "error_description": "将reg改为wire，第4行，第10列",
+    "line": 4,
+    "column": 10
+  }
+]

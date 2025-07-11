@@ -1,0 +1,16 @@
+# Verilog优化API服务依赖包
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+python-multipart==0.0.6
+optuna==3.4.0
+python-dotenv==1.0.0
+
+# 日志和监控
+structlog==23.2.0
+
+# 文件处理
+aiofiles==23.2.1
+
+# 系统工具
+psutil==5.9.6 

@@ -1,0 +1,11 @@
+flask
+transformers
+numpy
+openvino
+torch
+requests
+psutil
+matplotlib
+pandas
+
+

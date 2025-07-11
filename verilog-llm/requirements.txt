@@ -1,0 +1,17 @@
+# Web API依赖
+fastapi>=0.104.1
+uvicorn[standard]>=0.24.0
+pydantic>=2.5.0
+python-multipart>=0.0.6
+requests>=2.31.0
+
+# 基准测试依赖 (注意：openvino-genai需要单独安装)
+# pip install openvino-genai
+
+# 数据处理和分析
+numpy>=1.24.0
+
+# 说明：
+# 1. openvino-genai 需要根据硬件平台单独安装
+# 2. Intel NPU 需要安装对应的驱动程序
+# 3. 运行前请确保模型文件已正确下载到 qwen2.5-ov-int4 目录 
